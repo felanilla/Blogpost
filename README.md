@@ -1,6 +1,6 @@
 # Description
 
-Home DVD/Blue-Ray Collection
+Blogpost
 
 # Setup
 
