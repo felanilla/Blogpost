@@ -1,0 +1,13 @@
+//## Grid
+@import "../_variables";
+@import "../_mixins";
+
+.top {
+    background-color: $gray-lighter;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    img {
+        width: 50px;
+    }
+}

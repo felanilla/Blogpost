@@ -1,0 +1,14 @@
+//## Grid
+@import "../_variables";
+@import "../_mixins";
+
+.bottom {
+    background-color: $gray-lighter;
+
+    .row {
+
+        img {
+          width: 50px;
+        }
+    }
+}

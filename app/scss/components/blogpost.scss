@@ -1,0 +1,161 @@
+//## Grid
+@import "../_variables";
+@import "../_mixins";
+
+.blogpost {
+
+    &__header {
+        margin-top: ($spacing * 4);
+    }
+
+    &__subheader {
+        margin-top: $spacing-m;
+        margin-bottom: ($spacing * 4);
+        color: $gray-light;
+        width: 55%;
+
+        @include breakpoint(xs) {
+            width: 100%;
+        }
+    }
+
+    &__action-bar {
+        background-color: background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
+        margin: 0 0 ($spacing * 2) 0 !important;
+        padding: 35px 0;
+
+        &__copy {
+            color: $default;
+            text-align: center;
+            margin-bottom: $spacing;
+        }
+
+        &__buttons {
+
+            @include flexbox;
+            @include justify-content(center);
+
+            .button {
+                width: 210px;
+                height: 50px;
+                margin: 0 $spacing-m;
+            }
+        }
+    }
+
+    .button-blue {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .copy {
+        text-align: center;
+        margin: $spacing auto 20px;
+    }
+
+    .users {
+
+        &__user {
+            margin-bottom: $spacing-m;
+            @include flexbox;
+            @include align-items(center);
+
+            &__pic {
+                display: block;
+
+                @include breakpoint(md) {
+                    margin: 0 auto;
+                }
+            }
+
+            &__name {
+                margin: $spacing-m 0 0 15px;
+
+                @include breakpoint(md) {
+                    text-align: center;
+                    margin: $spacing-m 0 0;
+                }
+            }
+
+            @include breakpoint(md) {
+                width: 140px;
+                display: inline-block;
+                margin: 0 $spacing-m;
+            }
+
+            @include breakpoint(xs) {
+                margin: $spacing-m;
+            }
+        }
+
+        @include breakpoint(md) {
+            @include flexbox;
+            @include justify-content(center);
+        }
+
+        @include breakpoint(xs) {
+            @include flex-wrap(wrap);
+        }
+        
+    }
+
+    .article {
+        padding-left: ($spacing * 3);
+        padding-right: ($spacing * 3);
+
+        &__subheader {
+            margin: $spacing-m 0 $spacing 0;
+            color: $gray-light;
+        }
+
+        &__text {
+            margin: $spacing-m 0;
+        }
+
+        @include breakpoint(lg) {
+            padding-left: $spacing;
+            padding-right: $spacing;
+        }
+
+        @include breakpoint(md) {
+            margin-top: ($spacing * 3);
+        }
+    }
+
+    .comments {
+        margin: $spacing 0 ($spacing * 2);
+        padding-right: ($spacing * 2);
+
+        &__header {
+           margin-bottom: $spacing;  
+           font-weight: 400;
+        }
+
+        &__comment {
+            margin-bottom: $spacing;
+            @include flexbox;
+
+            &__pic {
+                display: block;
+            }
+
+            &__text {
+                font-size: $font-small;
+                color: $gray-light;
+                width: 80%;
+                padding: 0 $spacing-m;
+
+                @include breakpoint(sm) {
+                    width: 100%;
+                }
+            }
+
+            @include breakpoint(sm) {
+                display: block;
+            }
+        }
+    }
+}

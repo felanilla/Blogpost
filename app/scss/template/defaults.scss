@@ -1,0 +1,20 @@
+//## Defaults
+@import "_variables";
+@import "_mixins";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: $gray-base;
+  line-height: 1.4;
+  background-color: $default;
+  font-family: $primary-font;
+  font-family: $font-base;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  margin: 0 auto;
+}

@@ -1,0 +1,55 @@
+button, .button {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  height: 50px;
+  font-weight: 700;
+  border-radius: 0;
+  font-size: 20px;
+  transition: all 0.25s ease;
+  text-align: center;
+  cursor: pointer;
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+
+  p {
+    font-size: 20px;
+    color: $default;
+
+    @include breakpoint(md) {
+      font-size: 18px;
+    }
+
+    @include breakpoint(sm) {
+      font-size: 16px;
+    }
+  }
+
+  &:hover {
+  }
+}
+
+.button-pink {
+  background-color: $primary;
+  border: none;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+.button-blue {
+  background-color: $second;
+  border: none;
+
+  &:hover {
+    background-color: $second-dark;
+  }
+}
+
+.button-transparent {
+  background-color: transparent;
+  border: 2px solid $default;
+
+}

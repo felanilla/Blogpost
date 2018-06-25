@@ -1,0 +1,91 @@
+//## Utilities
+@import "../_variables";
+@import "../_mixins";
+
+//** Fonts and typo
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+.u-text-justify {
+  text-align: justify;
+}
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-italic {
+  font-style: italic;
+}
+
+.u-text-light {
+  color: $gray;
+  font-weight: 400;
+}
+
+//** Layering
+.u-top-layer {
+  z-index: 10;
+}
+.u-back-layer {
+  z-index: 0;
+}
+
+//** Spacing
+.u-padding-right-0 {
+  padding-right: 0;
+}
+
+.u-padding-left-0 {
+  padding-left: 0;
+}
+
+//**Styles
+
+.u-box-shadow {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+//** Responsive classes
+
+.u-visible-sm {
+  display: block;
+
+  @include breakpoint(sm) {
+    display: none;
+  }
+}
+
+.u-hidden-sm {
+  display: none;
+
+  @include breakpoint(sm) {
+    display: block;
+  }
+}
+
+// Basic animations
+
+.u-animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.u-fade-in-left {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
