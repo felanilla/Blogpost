@@ -25,9 +25,6 @@ button, .button {
       font-size: 16px;
     }
   }
-
-  &:hover {
-  }
 }
 
 .button-pink {
@@ -51,5 +48,4 @@ button, .button {
 .button-transparent {
   background-color: transparent;
   border: 2px solid $default;
-
 }
