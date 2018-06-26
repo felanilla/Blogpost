@@ -18,14 +18,10 @@ button, .btn {
   @include justify-content(center);
 
   p {
-    font-size: 20px;
+    font-size: $font-base;
     color: $default;
     z-index: 1;
-
-    @include breakpoint(md) {
-      font-size: $font-base;
-    }
-
+    
     @include breakpoint(sm) {
       font-size: $font-small;
     }
