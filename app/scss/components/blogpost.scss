@@ -25,12 +25,12 @@
     }
 
     &__action-bar {
-        background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 */
         margin: 0 0 ($spacing * 2) 0 !important;
         padding: 35px 0;
+        background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.65) 100%);
+        background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%,rgba(0,0,0,0.65) 100%);
+        background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0.65) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a6000000',GradientType=1 );
 
         &__copy {
             color: $default;
@@ -38,19 +38,19 @@
             margin-bottom: $spacing;
         }
 
-        &__buttons {
+        &__btns {
 
             @include flexbox;
             @include justify-content(center);
 
-            .button {
+            .btn {
                 width: 210px;
                 height: 50px;
                 margin: 0 $spacing-m;
 
                 @include breakpoint(xs) {
                     width: 80%;
-                    margin: $spacing-m auto;
+                    margin: 0 auto ($spacing-m * 2);
                 }
             }
 
@@ -60,7 +60,7 @@
         }
     }
 
-    .button-blue {
+    .btn-blue {
         width: 250px;
         margin: 0 auto;
 
@@ -78,7 +78,7 @@
     .users {
 
         &__user {
-            margin-bottom: $spacing-m;
+            margin-bottom: ($spacing-m * 2);
             @include flexbox;
             @include align-items(center);
 
@@ -155,7 +155,7 @@
         }
 
         &__comment {
-            margin-bottom: $spacing;
+            margin-bottom: ($spacing-m * 2);
             @include flexbox;
 
             &__pic {

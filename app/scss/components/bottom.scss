@@ -4,11 +4,47 @@
 
 .bottom {
     background-color: $gray-lighter;
+    padding: $spacing 0;
 
-    .row {
+    &__logo {
+        height: 40px;
+        cursor: pointer;
 
-        img {
-          width: 50px;
+        @include breakpoint(sm) {
+            width: 100%;
+            margin: ($spacing-m * 2) auto; 
+        }
+    }
+
+    &__links {
+        float: right;
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(center);
+
+        &__link {
+            color: $gray-light;
+            padding: $spacing-m;
+            font-size: $font-small;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: $gray;
+            }
+        }
+
+        &__dot {
+            height: 3px;
+            width: 3px;
+            background-color: $gray-light;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        @include breakpoint(sm) {
+            width: 100%;
+            @include flex-direction(column);   
         }
     }
 }

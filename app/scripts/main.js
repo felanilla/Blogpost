@@ -1,4 +1,5 @@
 //** Components
 
-// var animation = require("./data");
-// animation.init();
+var animation = require('./animation');
+
+animation.init();

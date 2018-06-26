@@ -24,8 +24,22 @@
   }
 }
 
+.row-no-col {
+
+  margin-left: ($grid-offset * 2);
+  margin-right: ($grid-offset * 2);
+  clear: both;
+
+  @include breakpoint(sm) {
+    margin-left: -$grid-offset;
+    margin-right: -$grid-offset;
+  }
+}
+
 .row:before,
-.row:after {
+.row:after,
+.row-no-col:before,
+.row-no-col:after {
   content: "";
   display: table;
   clear: both;

@@ -1,4 +1,4 @@
-button, .button {
+button, .btn {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -23,16 +23,16 @@ button, .button {
     z-index: 1;
 
     @include breakpoint(md) {
-      font-size: 18px;
+      font-size: $font-base;
     }
 
     @include breakpoint(sm) {
-      font-size: 16px;
+      font-size: $font-small;
     }
   }
 }
 
-.button-pink {
+.btn-pink {
   background-color: $primary;
   border: none;
 
@@ -41,7 +41,7 @@ button, .button {
   }
 }
 
-.button-blue {
+.btn-blue {
   background-color: $second;
   border: none;
 
@@ -50,7 +50,7 @@ button, .button {
   }
 }
 
-.button-transparent {
+.btn-transparent {
   background-color: transparent;
   border: 2px solid $default;
 
@@ -58,10 +58,10 @@ button, .button {
     content: "";
     background-color: transparent;
     position: absolute;
-    top: -20px;
-    left: -20px;
-    right: -20px;
-    bottom: -20px;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
     opacity: 0;
     color: #3f51b5;
     z-index: 0;

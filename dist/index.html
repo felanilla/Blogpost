@@ -20,14 +20,22 @@
     <div id="app">
         <div class="top container">
     <div class="row">
-        <div class="col-1-2">
-            <img src="../img/ragnarson-black.svg" alt="Ragnarson">
+        <div class="col-1-2 u-flex">
+            <a>
+                <img class="top__logo" src="../img/ragnarson-black.svg" alt="Ragnarson">
+            </a>
         </div>
-        <div class="col-1-2"></div>
+        <div class="col-1-2">
+            <div class="top__btn btn btn-blue">
+                <p>
+                    Login
+                </p>
+            </div>
+        </div>
     </div>
 </div> <section class="blogpost">
     <div class="container">
-    <div class="row">
+    <div class="row fade-in-up">
         <div class="col-1-1">
             <h1 class="blogpost__header">
                 Lorem ipsum dolor sit amet
@@ -44,13 +52,13 @@
                 Sed ut perspiciatis unde omis iste natus error sit.
             </p>
         </div>
-        <div class="col-1-1 blogpost__action-bar__buttons">
-            <div class="button button-pink">
+        <div class="col-1-1 blogpost__action-bar__btns">
+            <div class="btn btn-pink">
                 <p>
                     Create account
                 </p>
             </div>
-            <div class="button button-transparent">
+            <div class="btn btn-transparent">
                 <p>
                     Contact sales
                 </p>
@@ -60,7 +68,7 @@
 </div> <div class="container">
     <div class="row">
         <div class="col-1-3">
-            <div class="button button-blue">
+            <div class="btn btn-blue">
                 <p>
                     Share post
                 </p>
@@ -68,7 +76,7 @@
             <p class="copy">
                 Users who share this post
             </p>
-            <div class="users">
+            <div class="users pinned">
     <div class="users__user">
         <svg class="users__user__pic" height="100" width="100">
             <image style="stroke-width:6.5999999" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhAAAAIwCAYAAADXrFK/AAAABHNCSVQICAgIfAhkiAAAIABJREFU
@@ -2105,7 +2113,7 @@
     </div>
 </div>
         </div>
-        <div class="col-2-3 article">
+        <div class="col-2-3 article fade-in-up">
             <h2>
                 Quisque cursus lectus
             </h2>
@@ -2113,7 +2121,7 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure
                 dolor in voluptate velit esse cillum dolore.
             </h5>
-            <p class="article__text">
+            <p class="article__text fade-in-up">
                 Integer posuere nibh pellentesque libero interdum, et mattis nulla scelerisque. Proin dictum lacus tortor, vel dapibus enim
                 ultricies in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam
                 cursus cursus felis in venenatis. Fusce sed nulla nisi. Vivamus ipsum lorem, fringilla a fermentum a, vehicula
@@ -2121,19 +2129,29 @@
                 in faucibus orci luctus et ultrices posuere cubilia Curae; Cras molestie risus nisi, sed congue elit porta
                 sed. Integer sit amet erat eget lorem sagittis iaculis.
             </p>
-            <p class="article__text">
+            <p class="article__text fade-in-up">
                 Ut dignissim magna vel libero congue tempus. Sed feugiat ultricies lorem at congue. Pellentesque quis dignissim orci. Nulla
                 rutrum neque in ipsum lacinia hendrerit. Donec dictum quam turpis, ac volutpat erat facilisis eu. Nulla sit
                 amet neque sit amet odio porta venenatis at ullamcorper magna. Proin suscipit id mauris eget ullamcorper.
-                Morbi eleifend arcu ut imperdiet ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce odio
-                elit, consectetur sed nunc nec, vestibulum ultricies dui. Fusce iaculis a libero eget eleifend. Cras vitae
-                tristique mauris. Quisque eleifend faucibus pharetra.
+                Morbi eleifend arcu ut imperdiet ornare. Proin vulputate consequat sapien, eleifend pulvinar nulla mollis
+                sed. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras molestie
+                risus nisi, sed congue elit porta sed. Integer sit amet erat eget lorem sagittis iaculis. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Fusce odio elit, consectetur sed nunc nec, vestibulum ultricies dui.
+                Fusce iaculis a libero eget eleifend. Cras vitae tristique mauris. Quisque eleifend faucibus pharetra.
+            </p>
+            <p class="article__text fade-in-up">
+                Integer posuere nibh pellentesque libero interdum, et mattis nulla scelerisque. Proin dictum lacus tortor, vel dapibus enim
+                ultricies in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam
+                cursus cursus felis in venenatis. Fusce sed nulla nisi. Vivamus ipsum lorem, fringilla a fermentum a, vehicula
+                eget leo. Proin vulputate consequat sapien, eleifend pulvinar nulla mollis sed. Vestibulum ante ipsum primis
+                in faucibus orci luctus et ultrices posuere cubilia Curae; Cras molestie risus nisi, sed congue elit porta
+                sed. Integer sit amet erat eget lorem sagittis iaculis.
             </p>
             <div class="comments">
     <h4 class="comments__header">
         Comments
     </h4>
-    <div class="comments__comment">
+    <div class="comments__comment fade-in-left">
         <svg class="comments__comment__pic" height="100" width="100">
             <image style="stroke-width:6.5999999" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhAAAAIwCAYAAADXrFK/AAAABHNCSVQICAgIfAhkiAAAIABJREFU eF7snQWA1NXWwM9O13YnLN0liICoiPqwGzvgyTPRpysILLE0EiYGBqL4DGyxsQAF6c5dart3Z6f7
             u3f56F2m/j3n/739FuHeE79zZ+bMjXOjAB8kgAQkR+DtvPFXquXKrgqZPEsZBUmKqKgEpUwWT35i 1ApZtEom16nlMo0iSqZUyaPkCplMJgeQk3+XKeWyKKUsKkojJ39DHrvHAy6vz+fyeH0ur9frAfC4
@@ -2516,7 +2534,7 @@
 
         </p>
     </div>
-    <div class="comments__comment">
+    <div class="comments__comment fade-in-left">
         <svg class="comments__comment__pic" height="100" width="100">
             <image style="stroke-width:6.5999999" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhAAAAIwCAYAAADXrFK/AAAABHNCSVQICAgIfAhkiAAAIABJREFU eF7sXQd8E1fSn1WX3G3AVNtgeifUJJCYcKST3suF9JByaZd2KUfK5XKXXCoJqV96L5dK6lEChN57
             MS7YGBt3W73sN7NGIMuytCutpJX85n46OeiVef+30v533hQOmDAEGAIMAQUiwD8wLwec6hnAwzgA Lhvfs4Dj8aVqAuBLwM0fAJ7bj3+v5Z6fU6rAJTCVGAJJjQCX1Ktji2MIMAQSCgH+rvlEFi4EDk5D
@@ -3066,7 +3084,7 @@
             Proin vulputate consequat sapien, eleifend pulvinar nulla mollis sed. Vestibulum ante ipsum primis in faucibus.
         </p>
     </div>
-    <div class="comments__comment">
+    <div class="comments__comment fade-in-left">
         <svg class="comments__comment__pic" height="100" width="100">
             <image style="stroke-width:6.5999999" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhAAAAIwCAYAAADXrFK/AAAABHNCSVQICAgIfAhkiAAAIABJREFU eF7sXQd8VFXWP5ne0jsplNAJCQEBKSr2trquq64VQVGxo7hWlKiAvSsqIGBvu36urgXboohIDSSh
             BwKB9J7p/bs3MBCSSea9mffevDdzrr/8AHPvKf9zZ97/3XvuuTGADRFABBABRAARQAQQAZYIxLDs j90RAUQAEUAEEAFEABEAJBA4CRABRAARQAQQAUSANQJIIFhDhgMQAUQAEUAEEAFEAAkEzgFEABFA
@@ -3501,14 +3519,27 @@
     </div>
 </div>
 </section> <div class="bottom container">
-  <div class="row">
-    <div class="col-1-2">
-      <img class="logotype" src="../img/ragnarson-pink.svg" alt="Ragnarson">
+  <div class="row-no-col">
+    <a>
+      <img class="bottom__logo fade-in-up" src="../img/ragnarson-pink.svg" alt="Ragnarson">
+    </a>
+    <div class="bottom__links">
+      <p class="bottom__links__link">
+        Nam pharetra
+      </p>
+      <span class="bottom__links__dot"></span>
+      <p class="bottom__links__link">
+        Morbi dictum
+      </p>
+      <span class="bottom__links__dot"></span>
+      <p class="bottom__links__link">
+        Fusce et dabipus
+      </p>
     </div>
-    <div class="col-1-2"></div>
   </div>
 </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
     <script src="scripts/main.js"></script>
