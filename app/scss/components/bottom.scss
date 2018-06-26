@@ -12,7 +12,7 @@
 
         @include breakpoint(sm) {
             width: 100%;
-            margin: ($spacing-m * 2) auto; 
+            margin: 0 auto ($spacing-m * 2); 
         }
     }
 
